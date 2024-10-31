@@ -91,7 +91,7 @@ function Resume() {
               description={"working as full stack developer and web designer."}
               image={"./freelancer-svgrepo-com.svg"}
             />
-            {/* /* {skills section} */}
+            {/* /* {skills sectionsskjdf} */}
             {/* </div> */}
           </div>
         </div>
