@@ -2,7 +2,6 @@ import React from "react";
 import { MdCastForEducation } from "react-icons/md";
 import { RiGraduationCapLine } from "react-icons/ri";
 import ResumeCard from "./ResumeCard";
-import AnimatedCircularProgressBar from "./ui/animated-circular-progress-bar";
 import Skills from "./Skills";
 import BlurFade from "./ui/blur-fade";
 
@@ -105,8 +104,8 @@ function Resume() {
         {/* skills section  */}
         <Skills />
         <h1 className="text-3xl font-bold border-b-2 max-[600px]:text-xl">
-          "Any fool can write code that a computer can understand. Good
-          programmers write code that humans can understand."
+          &quot;Any fool can write code that a computer can understand. Good
+          programmers write code that humans can understand.&quot;
         </h1>
       </BlurFade>
     </div>

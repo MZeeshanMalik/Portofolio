@@ -1,6 +1,5 @@
 import React from "react";
 import AnimatedCircularProgressBar from "./ui/animated-circular-progress-bar";
-import Image from "next/image";
 import { FaNodeJs } from "react-icons/fa";
 import { RiBookMarkedFill } from "react-icons/ri";
 
@@ -96,13 +95,7 @@ function Skills() {
           <div className="flex flex-col items-center">
             <div className="flex flex-col items-center mb-4">
               <RiBookMarkedFill />
-              {/* <Image
-                width={40}
-                height={20}
-                src="/path/to/knowledge-icon.svg"
-                alt="Knowledge Icon"
-                className="w-10 h-10 mb-2"
-              /> */}
+
               <h2 className="text-lg font-semibold">KNOWLEDGE</h2>
             </div>
             <ul className="list-none space-y-2 text-left text-base">

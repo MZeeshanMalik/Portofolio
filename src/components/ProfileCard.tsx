@@ -2,10 +2,7 @@
 
 import BlurFade from "./ui/blur-fade";
 import TypingAnimation from "./ui/typing-animation";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithubAlt } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { TbBrandFiverr } from "react-icons/tb";
+
 import WordRotate from "./ui/word-rotate";
 import { DockDemo } from "./ui/Icons";
 

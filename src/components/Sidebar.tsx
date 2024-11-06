@@ -1,15 +1,16 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Button from "./Button";
-import { IoMenuSharp, IoPersonSharp } from "react-icons/io5";
+import { IoPersonSharp } from "react-icons/io5";
 import { TiDocumentText } from "react-icons/ti";
 import { IoMdStats } from "react-icons/io";
 import { MdOutlineContactPhone } from "react-icons/md";
 
-function Sidebar({ setItem, item }) {
-  // const [resume, setResume] = React.useState(false);
-  // const [about, setAbout] = React.useState(false);
-  // const [works, setWorks] = React.useState(false);
-  // const [contact, setContact] = React.useState(false);
+interface SidebarProps {
+  setItem: (item: string) => void;
+  item: string;
+}
+
+function Sidebar({ setItem, item }: SidebarProps) {
   return (
     <div className="flex justify-center items-center h-[100%] ">
       <div className="flex w-[100%] justify-evenly items-center  flex-col text-sm font-extralight  text-black max-md:flex-row h-[100%]">
