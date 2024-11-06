@@ -5,36 +5,62 @@ import { TiDocumentText } from "react-icons/ti";
 import { IoMdStats } from "react-icons/io";
 import { MdOutlineContactPhone } from "react-icons/md";
 
-function Sidebar({ setItem }) {
-  const [resume, setResume] = React.useState(false);
-  const [about, setAbout] = React.useState(false);
+function Sidebar({ setItem, item }) {
+  // const [resume, setResume] = React.useState(false);
+  // const [about, setAbout] = React.useState(false);
+  // const [works, setWorks] = React.useState(false);
+  // const [contact, setContact] = React.useState(false);
   return (
-    <div>
-      <div className="flex justify-center  flex-col text-sm font-extralight text-black ">
-        <Button>
-          <IoMenuSharp size={"30px"} />
-          Menue
-        </Button>
-        <Button onclick={() => setItem("About")}>
-          <IoPersonSharp size={"30px"} />
-          About
-        </Button>
-        <Button onclick={() => setItem("Resume")}>
-          <TiDocumentText size={"30px"} />
-          Resume
-        </Button>
-        <Button>
-          <IoMdStats size={"30px"} />
-          Stats
-        </Button>
-        <Button>
-          <MdOutlineContactPhone size={"30px"} />
-          Contact
-        </Button>
-        <Button>
-          <MdOutlineContactPhone size={"30px"} />
-          Experience
-        </Button>
+    <div className="flex justify-center items-center h-[100%] ">
+      <div className="flex w-[100%] justify-evenly items-center  flex-col text-sm font-extralight  text-black max-md:flex-row h-[100%]">
+        <div>
+          <Button
+            className={item == "About" ? "text-green-600" : ""}
+            onclick={() => setItem("About")}
+          >
+            <IoPersonSharp
+              size={"30px"}
+              className={item == "About" ? "text-green-500" : ""}
+            />
+            About
+          </Button>
+        </div>
+        <div>
+          <Button
+            className={item == "Resume" ? "text-green-600" : ""}
+            onclick={() => setItem("Resume")}
+          >
+            <TiDocumentText
+              className={item == "Resume" ? "text-green-500" : ""}
+              size={"30px"}
+            />
+            Resume
+          </Button>
+        </div>
+        <div>
+          <Button
+            className={item == "Works" ? "text-green-600" : ""}
+            onclick={() => setItem("Works")}
+          >
+            <IoMdStats
+              className={item == "Works" ? "text-green-500" : ""}
+              size={"30px"}
+            />
+            Projects
+          </Button>
+        </div>
+        <div>
+          <Button
+            className={item == "Contact" ? "text-green-600" : ""}
+            onclick={() => setItem("Contact")}
+          >
+            <MdOutlineContactPhone
+              className={item == "Contact" ? "text-green-500" : ""}
+              size={"30px"}
+            />
+            Contact
+          </Button>
+        </div>
       </div>
     </div>
   );

@@ -6,19 +6,19 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export function DockDemo() {
   return (
-    <div className="relative ">
+    <div className="relative max-md:mr-5">
       <Dock direction="middle">
         <DockIcon>
-          <Icons.gitHub className="size-6" />
+          <Icons.gitHub className="size-6 max-md:size-6" />
         </DockIcon>
         <DockIcon>
-          <Icons.googleDrive className="size-6" />
+          <Icons.googleDrive className="size-6 max-md:size-3" />
         </DockIcon>
         <DockIcon>
-          <Icons.notion className="size-6" />
+          <Icons.notion className="size-6 max-md:size-3" />
         </DockIcon>
         <DockIcon>
-          <Icons.whatsapp className="size-6" />
+          <Icons.whatsapp className="size-6 max-md:size-3" />
         </DockIcon>
       </Dock>
     </div>
@@ -42,7 +42,7 @@ const Icons = {
     <>
       <a
         href="https://www.linkedin.com/in/muhammad-zeeshan-648b55281"
-        target="blank"
+        target="_blank"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

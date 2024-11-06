@@ -9,24 +9,18 @@ function Skills() {
     <div className="text-black p-8">
       <h1 className="text-3xl font-bold mb-8 border-b-2">Skills</h1>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between max-[600px]:flex-col max-[500px]:mt-5">
         {/* Back-End Skills Section */}
-        <div className="w-1/2">
+        <div className="w-1/2 max-[600px]:w-[100%] max-[600px]:flex-col">
           <div className="flex flex-col items-center">
             <div className="flex flex-col items-center justify-around mb-4">
               <FaNodeJs />
-              {/* <Image
-                src="/path/to/backend-icon.svg"
-                alt="Back-End Icon"
-                width={40}
-                height={20}
-                className="w-10 h-10 mb-2"
-              /> */}
               <h2 className="text-lg font-semibold">Technologies</h2>
             </div>
             <div className="flex justify-around flex-wrap items-center mt-4">
               <div className="flex flex-col items-center ">
                 <AnimatedCircularProgressBar
+                  className="max-[400px]:w-[50px]"
                   max={100}
                   value={87}
                   min={0}
@@ -38,6 +32,7 @@ function Skills() {
 
               <div className="flex flex-col items-center">
                 <AnimatedCircularProgressBar
+                  className="max-[400px]:w-[50px]"
                   max={100}
                   value={90}
                   min={0}
@@ -49,6 +44,7 @@ function Skills() {
 
               <div className="flex flex-col items-center">
                 <AnimatedCircularProgressBar
+                  className="max-[400px]:w-[50px]"
                   max={100}
                   value={88}
                   min={0}
@@ -60,6 +56,7 @@ function Skills() {
 
               <div className="flex flex-col items-center">
                 <AnimatedCircularProgressBar
+                  className="max-[400px]:w-[50px]"
                   max={100}
                   value={92}
                   min={0}
@@ -70,6 +67,7 @@ function Skills() {
               </div>
               <div className="flex flex-col items-center">
                 <AnimatedCircularProgressBar
+                  className="max-[400px]:w-[50px]"
                   max={100}
                   value={92}
                   min={0}
@@ -80,6 +78,7 @@ function Skills() {
               </div>
               <div className="flex flex-col items-center">
                 <AnimatedCircularProgressBar
+                  className="max-[400px]:w-[50px]"
                   max={100}
                   value={92}
                   min={0}
@@ -93,7 +92,7 @@ function Skills() {
         </div>
 
         {/* Knowledge Section */}
-        <div className="w-1/2">
+        <div className="w-1/2 max-[600px]:w-[100%] max-[600px]:mt-5">
           <div className="flex flex-col items-center">
             <div className="flex flex-col items-center mb-4">
               <RiBookMarkedFill />

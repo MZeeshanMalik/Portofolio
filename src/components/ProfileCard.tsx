@@ -16,10 +16,10 @@ interface ProfileCardProps {
 const ProfileCard: React.FC<ProfileCardProps> = ({ imageUrl }) => {
   return (
     <>
-      <div className=" h-[20vh] w-[40vh] flex justify-center items-center flex-col  ">
+      <div className=" h-[20vh] w-[40vh] flex justify-center items-center flex-col max-sm:h-[10vh] max-sm:w-[20vh] max-[500px]:w-[100vh] max-[500px]:h-[auto] ">
         <BlurFade>
           <img
-            className="object-contain rounded-full "
+            className="object-contain max-[500px]:w-[20vh] rounded-full "
             src={imageUrl}
             alt="Profile Image"
           />
@@ -38,36 +38,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ imageUrl }) => {
               "Back-end Developer",
             ]}
           />
-          {/* <div className="flex">
-          <a
-            className="m-2"
-            href="https://www.linkedin.com/in/muhammad-zeeshan-0b1b3b1b4/"
-            target="blank"
-          >
-            <FaLinkedin size="20px" color="white" />
-          </a>{" "}
-          <a
-            className="m-2"
-            href="https://www.linkedin.com/in/muhammad-zeeshan-0b1b3b1b4/"
-            target="blank"
-          >
-            <FaGithubAlt size="20px" color="white" />
-          </a>
-          <a
-            className="m-2"
-            href="https://www.linkedin.com/in/muhammad-zeeshan-0b1b3b1b4/"
-            target="blank"
-          >
-            <FaFacebook size="20px" color="white" />
-          </a>
-          <a
-            className="m-2"
-            href="https://www.linkedin.com/in/muhammad-zeeshan-0b1b3b1b4/"
-            target="blank"
-          >
-            <TbBrandFiverr size="20px" color="white" />
-          </a>
-        </div> */}
+
           <DockDemo />
         </div>
       </div>
