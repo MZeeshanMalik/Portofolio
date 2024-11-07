@@ -105,8 +105,8 @@ function Skills() {
               <li>✔ API Integration</li>
               <li>✔ Authentication</li>
               <li>✔ Database Integration</li>
-              <li>✔ W3C validated coding</li>
-              <li>✔ MERN or T3 stack</li>
+              <li>✔ Ecommerence web development</li>
+              <li>✔ MERN or NEXTJS stack</li>
             </ul>
           </div>
         </div>

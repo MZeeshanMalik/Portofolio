@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -141,4 +143,19 @@ body {
 .scrollable-element {
   scrollbar-width: thin; /* Can be 'auto', 'thin', or 'none' */
   scrollbar-color: #888 #f0f0f0; /* Thumb and track color */
+}
+
+.quotesfonts {
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-font {
+  font-family: "Raleway";
+  /* font-optical-sizing: auto; */
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
 }

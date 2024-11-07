@@ -21,7 +21,7 @@ function Resume() {
                 <h2 className="text-2xl font-bold ml-4 "> Education</h2>
               </div>
               <ResumeCard
-                date={"2022-present"}
+                date={"2021-present"}
                 title={" Islamia university Bahawalpur"}
                 location={"Pakistan"}
                 description={
@@ -103,9 +103,10 @@ function Resume() {
         </div>
         {/* skills section  */}
         <Skills />
-        <h1 className="text-3xl font-bold border-b-2 max-[600px]:text-xl">
+        <h1 className="text-3xl font-bold border-b-2 max-[600px]:text-xl quotesfonts">
           &quot;Any fool can write code that a computer can understand. Good
-          programmers write code that humans can understand.&quot;
+          programmers write code that humans can understand&quot; <br />
+          <span className="text-lg text-stone-950">(Martin Fowler) </span>
         </h1>
       </BlurFade>
     </div>
